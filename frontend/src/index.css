@@ -1,0 +1,27 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Impor font Inter dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Atur font global dan warna latar belakang */
+body {
+  font-family: 'Inter', sans-serif; /* Menerapkan font Inter */
+  @apply bg-gray-100 text-gray-800; /* Warna latar belakang dan teks default */
+  min-height: 100vh; /* Pastikan body mengambil tinggi minimal seluruh viewport */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Mencegah scrolling horizontal yang tidak diinginkan */
+}
+
+/* Gaya dasar untuk link */
+a {
+  @apply text-indigo-600 hover:text-indigo-800 transition-colors duration-300;
+}
+
+/* Gaya dasar untuk tombol */
+button {
+  @apply rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500;
+}
